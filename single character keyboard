@@ -1,0 +1,9 @@
+       MOV AL,00
+       OUT C2,AL
+       MOV AL,0CC
+       OUT C2,AL
+       MOV AL,90
+       OUT C2,AL
+       MOV AL,8F
+       OUT C0,AL
+       HLT
