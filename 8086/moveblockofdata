@@ -1,0 +1,10 @@
+
+MOV SI,1150H     
+MOV DI,1250H     
+MOV CX,0006H     
+
+REPEAT: CLD      
+        MOVSB    
+        LOOP REPEAT
+
+HLT
