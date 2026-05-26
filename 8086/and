@@ -1,0 +1,7 @@
+    
+
+MOV AX,[1200H]
+AND AX,0F0FH
+MOV [1202H],AX
+
+HLT
