@@ -1,0 +1,17 @@
+START  LXI H, 4200
+       MVI C, 04
+NEXT   MOV A, M
+       OUT C0
+       LXI D, 1010
+loop   DCX D
+       MOV A, E
+       ORA D
+       JNZ loop
+       INX H
+       DCR C
+       JNZ NEXT
+       JMP START
+       HLT
+
+TABLE  09 05 06 0A
+TABLE  0A 06 05 09
