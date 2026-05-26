@@ -1,0 +1,22 @@
+      
+MOV DX, 00H
+MOV SI, 1250H
+MOV CX, 03H
+
+MOV AX, [SI]
+
+A1: INC SI
+    INC SI
+    ADD AX, [SI]
+    JNC NEXT
+    INC DX
+
+NEXT: LOOP A1
+
+INC SI
+INC SI
+
+MOV [1300H], AX
+MOV [1302H], DX
+
+HLT
